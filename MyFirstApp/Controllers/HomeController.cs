@@ -76,5 +76,13 @@ namespace MyFirstApp.Controllers
                 return Redirect(fbUrl);
             }
         }
+
+        public ActionResult StudentDetails()
+        {
+            ViewBag.StudentId = 101;
+            ViewBag.StudentName = "Scott";
+            ViewBag.Marks = 80;
+            return View();
+        }
     }
 }

@@ -83,6 +83,8 @@ namespace MyFirstApp.Controllers
             ViewBag.StudentName = "Scott";
             ViewBag.Marks = 50;
             ViewBag.NoOfSemesters = 6;
+            ViewBag.Subjects = new List<string>() { "Maths", "Physics", "Chemstry" };
+
             return View();
         }
     }

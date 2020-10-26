@@ -52,6 +52,20 @@
                 <td>Result</td>
                 <td>@StudentResult</td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    @{ 
+                        if (StudentResult == "Pass")
+                        {
+                            <span class="text-success">Congratulations</span>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Better luck next time</span>
+                        }
+                    }
+                </td>
+            </tr>
         </table>
     </div>
 </body>

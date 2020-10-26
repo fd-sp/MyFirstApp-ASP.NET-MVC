@@ -81,7 +81,7 @@ namespace MyFirstApp.Controllers
         {
             ViewBag.StudentId = 101;
             ViewBag.StudentName = "Scott";
-            ViewBag.Marks = 80;
+            ViewBag.Marks = 50;
             return View();
         }
     }

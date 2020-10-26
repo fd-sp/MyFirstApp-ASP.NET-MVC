@@ -82,6 +82,7 @@ namespace MyFirstApp.Controllers
             ViewBag.StudentId = 101;
             ViewBag.StudentName = "Scott";
             ViewBag.Marks = 50;
+            ViewBag.NoOfSemesters = 6;
             return View();
         }
     }

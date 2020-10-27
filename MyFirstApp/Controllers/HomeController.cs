@@ -99,5 +99,14 @@ namespace MyFirstApp.Controllers
             ViewBag.HttpMethod = Request.HttpMethod;
             return View();
         }
+
+        public ActionResult ResponseExample()
+        {
+            Response.Write("Hello from ResponseExample");
+            Response.ContentType = "text/html";
+            Response.Headers["Server"] = "My Server";
+            Response.StatusCode = 500;
+            return View();
+        }
     }
 }
